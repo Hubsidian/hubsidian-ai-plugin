@@ -1,0 +1,21 @@
+name: validate
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      # Same rules the hubsidian server enforces at build time, so a bad skill
+      # fails here instead of at server deploy.
+      - run: node scripts/validate-skills.mjs
+      # Static plugin/marketplace manifest validation (also the pre-submission
+      # check for the community marketplace).
+      - run: npm install -g @anthropic-ai/claude-code
+      - run: claude plugin validate .

@@ -1,0 +1,13 @@
+{
+  "name": "hubsidian",
+  "displayName": "Hubsidian",
+  "version": "0.2.0",
+  "description": "Personal Knowledge MCP for your Obsidian vault — distributed agent skills (hubsidian:*) plus setup for the notes MCP connection.",
+  "author": {
+    "name": "seiichi1101",
+    "url": "https://github.com/seiichi1101"
+  },
+  "homepage": "https://github.com/Hubsidian/hubsidian-ai-plugin",
+  "license": "MIT",
+  "keywords": ["obsidian", "mcp", "notes", "skills", "knowledge"]
+}

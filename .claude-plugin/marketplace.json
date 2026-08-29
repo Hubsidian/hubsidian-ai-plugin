@@ -1,0 +1,16 @@
+{
+  "name": "hubsidian",
+  "description": "Personal Knowledge MCP for your Obsidian vault — plugin and skills for Claude Code and Codex.",
+  "owner": {
+    "name": "seiichi1101",
+    "url": "https://github.com/Hubsidian"
+  },
+  "plugins": [
+    {
+      "name": "hubsidian",
+      "source": "./",
+      "description": "Personal Knowledge MCP for your Obsidian vault — distributed agent skills (hubsidian:*) plus setup for the notes MCP connection.",
+      "version": "0.2.0"
+    }
+  ]
+}
